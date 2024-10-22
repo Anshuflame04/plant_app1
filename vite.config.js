@@ -4,23 +4,24 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true, // Ensure it's accessible over the network if needed
-    port: 5173, // Ensure correct port configuration
+    host: true, // Enable network access
+    port: 5173, // Specify port
+    strictPort: true, // Fail if port is in use
   },
-  esbuild: {
-    jsxInject: `import React from 'react'`, // Ensure proper JSX handling if required
+  build: {
+    outDir: 'dist', // Output directory for build (Netlify looks for this folder)
+    rollupOptions: {
+      output: {
+        format: 'esm', // Output in ECMAScript module format
+      },
+    },
+    target: 'esnext', // Set the build target for modern browsers
   },
   resolve: {
     alias: {
-      'react-native$': 'react-native-web', // Alias to use react-native-web
+      // Only needed if you're using react-native-web
+      'react-native$': 'react-native-web',
     },
   },
-  build: {
-    target: 'esnext', // Ensure Vite builds for modern browsers
-    rollupOptions: {
-      output: {
-        format: 'esm', // Ensure ES modules are served properly
-      },
-    },
-  },
+  base: '/', // This ensures correct asset loading in Netlify's deployment environment
 });
