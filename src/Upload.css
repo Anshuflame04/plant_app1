@@ -1,0 +1,97 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .upload-title {
+    margin: 0 0 20px;
+    color: #333;
+  }
+  
+  .crop-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .crop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .crop-icon.selected {
+    transform: scale(1.1);
+    border: 2px solid #4CAF50; /* Highlight selected crop */
+  }
+  
+  .crop-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular crop icons */
+  }
+  
+  .upload-box {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #4CAF50;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .upload-text {
+    color: #4CAF50;
+    font-size: 16px;
+  }
+  
+  .hidden-file-input {
+    display: none;
+  }
+  
+  .image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+  }
+  
+  .upload-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    color: #555;
+  }
+  
+  .result-image {
+    width: 100%;
+    max-height: 200px; /* Restrict image height */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  

@@ -1,0 +1,41 @@
+.options-menu {
+  position: absolute; /* Position relative to the container */
+  top: 50px; /* Adjust to where you want it to appear */
+  right: 15px; /* Align it a bit away from the right edge */
+  background-color: #ffffff; /* White background color */
+  border: 1px solid #ccc; /* Border for the menu */
+  border-radius: 8px; /* Slightly larger rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for better depth */
+  z-index: 1000; /* Make sure it's on top */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.options-menu ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.options-menu li {
+  padding: 12px 18px; /* Increased padding for each item */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.options-menu li:hover {
+  background-color: #e9ecef; /* Light gray background on hover */
+}
+
+.options-menu li:active {
+  background-color: #dee2e6; /* Darker gray for active state */
+}
+
+.options-menu li:first-child {
+  border-top-left-radius: 8px; /* Rounded corners for the top */
+  border-top-right-radius: 8px;
+}
+
+.options-menu li:last-child {
+  border-bottom-left-radius: 8px; /* Rounded corners for the bottom */
+  border-bottom-right-radius: 8px;
+}

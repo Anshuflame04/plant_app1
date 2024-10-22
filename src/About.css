@@ -1,0 +1,39 @@
+/* Container for the About page */
+.about-container {
+    max-width: 800px; /* Set a max-width for readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Clean font */
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2rem; /* Large heading */
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Paragraph styling */
+  .app-description {
+    font-size: 1.1rem; /* Slightly larger font for description */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #555; /* Slightly lighter text color */
+    text-align: justify; /* Justify text for a clean look */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  /* Features list styling */
+  .features-list {
+    list-style-type: disc; /* Use a disc for bullet points */
+    padding-left: 20px; /* Indent list items */
+    font-size: 1rem; /* Normal font size */
+    color: #333; /* Dark text color */
+  }
+  
+  .features-list li {
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
